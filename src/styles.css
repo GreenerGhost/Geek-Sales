@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,700&display=swap");
+
+/* Declaración de colores */
+
+:root {
+  --link-text-color: #2a7ae4;
+  --title-color: #ffffff;
+  --text-color: #464646;
+  --box-text-color: #a2a2a2;
+  --background-page: #ffffff;
+  --background-body: #f5f5f5;
+  --background-footer: #eaf2fd;
+  --box-shadow: #c8c8c8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+
+@media screen and (max-width: 1440px) {
+  body {
+    gap: 0px;
+  }
+}
