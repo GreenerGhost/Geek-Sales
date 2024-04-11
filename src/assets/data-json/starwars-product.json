@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "name": "Star Wars Lightsaber",
+    "description": "A weapon used by Jedi and Sith.",
+    "price": "199.99"
+  },
+  {
+    "id": "2",
+    "name": "Millennium Falcon",
+    "description": "The iconic spaceship of Han Solo.",
+    "price": "599.99"
+  },
+  {
+    "id": "3",
+    "name": "Darth Vader Helmet",
+    "description": "The helmet worn by the Sith Lord.",
+    "price": "149.99"
+  },
+  {
+    "id": "4",
+    "name": "R2-D2 Astromech Droid",
+    "description": "A versatile and loyal astromech droid.",
+    "price": "299.99"
+  },
+  {
+    "id": "5",
+    "name": "Stormtrooper Blaster",
+    "description": "The standard issue weapon of the Imperial stormtroopers.",
+    "price": "79.99"
+  },
+  {
+    "id": "6",
+    "name": "Chewbacca Plush Toy",
+    "description": "A soft and cuddly toy of the Wookiee co-pilot.",
+    "price": "19.99"
+  },
+  {
+    "id": "7",
+    "name": "Death Star LEGO Set",
+    "description": "Recreate the infamous battle station.",
+    "price": "499.99"
+  },
+  {
+    "id": "8",
+    "name": "Yoda's Lightsaber",
+    "description": "The weapon of the wise and powerful Jedi Master.",
+    "price": "249.99"
+  },
+  {
+    "id": "9",
+    "name": "BB-8 App-Enabled Droid",
+    "description": "Control this droid with your smartphone.",
+    "price": "149.99"
+  },
+  {
+    "id": "10",
+    "name": "X-Wing Starfighter Model",
+    "description": "A detailed replica of the Rebel Alliance starfighter.",
+    "price": "99.99"
+  }
+]

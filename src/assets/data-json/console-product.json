@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "name": "Super Mario Odyssey",
+    "price": "59.99",
+    "description": "Join Mario on a massive, globe-trotting 3D adventure!"
+  },
+  {
+    "id": "2",
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "price": "59.99",
+    "description": "Explore the wilds of Hyrule any way you like."
+  },
+  {
+    "id": "3",
+    "name": "PlayStation 4 Pro",
+    "price": "399.99",
+    "description": "Experience 4K gaming with HDR and improved graphics."
+  },
+  {
+    "id": "4",
+    "name": "Xbox One X",
+    "price": "499.99",
+    "description": "The world's most powerful console."
+  },
+  {
+    "id": "5",
+    "name": "Red Dead Redemption 2",
+    "price": "59.99",
+    "description": "An epic tale of life in America's unforgiving heartland."
+  },
+  {
+    "id": "6",
+    "name": "FIFA 19",
+    "price": "59.99",
+    "description": "Experience the world's most prestigious club competition."
+  },
+  {
+    "id": "7",
+    "name": "Nintendo Switch",
+    "price": "299.99",
+    "description": "Play at home or on the go with versatile Joy-Con controllers."
+  },
+  {
+    "id": "8",
+    "name": "Call of Duty: Black Ops 4",
+    "price": "59.99",
+    "description": "Experience the deepest, most engaging Call of Duty ever."
+  },
+  {
+    "id": "9",
+    "name": "PlayStation 4 Slim",
+    "price": "299.99",
+    "description": "Experience the sleeker, more streamlined PS4."
+  },
+  {
+    "id": "10",
+    "name": "Xbox One S",
+    "price": "299.99",
+    "description": "Play the greatest games lineup, including Xbox 360 classics."
+  }
+]
