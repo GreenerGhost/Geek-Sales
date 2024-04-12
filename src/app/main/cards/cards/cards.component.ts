@@ -7,7 +7,7 @@ import {
 } from '@angular/core';
 import { CardComponent } from '../card/card.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ConsoleProductService } from '../../services/consoleproduct.service';
+import { ConsoleProductService } from '@services/consoleproduct.service';
 
 @Component({
   selector: 'app-cards',

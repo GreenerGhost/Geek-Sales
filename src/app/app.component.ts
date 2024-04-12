@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './header/header/header.component';
-import { PromotionalComponent } from './main/promotional/promotional.component';
-import { MainComponent } from './main/main/main.component';
+import { HeaderComponent } from './shared/header/header/header.component';
+import { PromotionalComponent } from './main/cards/promotional/promotional.component';
+import { MainComponent } from './main/cards/main/main.component';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +16,6 @@ import { MainComponent } from './main/main/main.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
+export default class AppComponent {
   title = 'geek-sales-page';
 }

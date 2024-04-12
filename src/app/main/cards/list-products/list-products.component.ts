@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { MainComponent } from '../main/main.component';
 import { CardsComponent } from '../cards/cards.component';
+import { MainComponent } from '../main/main.component';
 
 @Component({
   selector: 'app-list-products',
