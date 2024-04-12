@@ -12,11 +12,7 @@ import { ConsoleProductService } from '../../services/consoleproduct.service';
 @Component({
   selector: 'app-cards',
   standalone: true,
-  imports: [
-    CommonModule, 
-    CardComponent, 
-    HttpClientModule,
-  ],
+  imports: [CommonModule, CardComponent, HttpClientModule],
   templateUrl: './cards.component.html',
   styleUrl: './cards.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
