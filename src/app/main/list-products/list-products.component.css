@@ -1,3 +1,71 @@
-:host {
-  display: block;
+div {
+  width: 1133px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  color: var(--text-color);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+a {
+  width: 100px;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  text-decoration: none;
+  color: var(--link-text-color);
+}
+
+p {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+i {
+  width: 24px;
+  font-size: 24px;
+}
+
+app-cards {
+  max-width: 1133px;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 769px) {
+  div {
+    width: 100%;
+    max-width: 1136px;
+    height: 26px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p,
+  i {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  div {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p,
+  i {
+    font-size: 14px;
+  }
 }

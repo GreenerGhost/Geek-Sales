@@ -8,13 +8,13 @@ import { MainComponent } from './main/main/main.component';
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet, 
+    RouterOutlet,
     HeaderComponent,
     PromotionalComponent,
     MainComponent,
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'geek-sales-page';

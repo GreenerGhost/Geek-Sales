@@ -1,14 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { CardComponent } from '../card/card.component';
 import { MainComponent } from '../main/main.component';
+import { CardsComponent } from '../cards/cards.component';
 
 @Component({
   selector: 'app-list-products',
   standalone: true,
   imports: [
     CommonModule,
-    CardComponent,
+    CardsComponent,
     MainComponent,
   ],
   templateUrl: './list-products.component.html',

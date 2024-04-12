@@ -27,5 +27,9 @@ export class MainComponent {
       id: 3,
       name: 'Diversos',
     },
+    {
+      id: 4,
+      name: 'Ropa',
+    }
   ];
 };
