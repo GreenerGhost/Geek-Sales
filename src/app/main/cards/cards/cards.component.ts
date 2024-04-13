@@ -8,11 +8,16 @@ import {
 import { CardComponent } from '../card/card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ConsoleProductService } from '@services/consoleproduct.service';
+import { JSONProduct } from '@models/json-product';
 
 @Component({
   selector: 'app-cards',
   standalone: true,
-  imports: [CommonModule, CardComponent, HttpClientModule],
+  imports: [
+    CommonModule, 
+    CardComponent, 
+    HttpClientModule
+  ],
   templateUrl: './cards.component.html',
   styleUrl: './cards.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -20,15 +25,15 @@ import { ConsoleProductService } from '@services/consoleproduct.service';
 export class CardsComponent implements OnInit {
   @Input() name: string = '';
 
-  product: any;
-
-  constructor(private productService: ConsoleProductService) {}
-
+  products: JSONProduct[] = [];
+  
+  constructor(private productService: ConsoleProductService) { }
+  
   ngOnInit(): void {
     this.productService.getProducts().subscribe({
-      next: (product: any) => {
-        this.product = product;
-        console.log(this.product);
+      next: ( product: JSONProduct[] ) => {
+        this.products = product;
+        console.log(this.products);
       },
       error: (error: any) => {
         console.error(error);
@@ -36,6 +41,6 @@ export class CardsComponent implements OnInit {
       complete: () => {
         console.log('Complete');
       },
-    });
+    }) 
   }
 }

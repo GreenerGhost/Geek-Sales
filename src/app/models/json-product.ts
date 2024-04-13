@@ -1,4 +1,4 @@
-export interface ClotesProduct {
+export interface JSONProduct {
   id:          string;
   name:        string;
   price:       string;
