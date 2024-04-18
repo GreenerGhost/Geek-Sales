@@ -15,4 +15,5 @@ export class ConsoleProductService {
   getProducts(): Observable<JSONProduct[]> {
     return this.http.get<JSONProduct[]>(`${this.ApiUrl}`);
   }
+
 }

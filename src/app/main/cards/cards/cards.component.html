@@ -1,6 +1,14 @@
-<ul>
-  <h1>{{ name }}</h1>
+<div>
+  <h3>Productos de {{ name }}</h3>
 
-  <pre>{{ this.products | json }}</pre>
-  <app-card/>
-</ul>
+  <p>{{ products[0].id }}</p>
+    
+  @for (product of products; track products) {
+    <app-card 
+      id = '{{ product.id }}'
+      name = '{{ product.name }}'
+      image = '{{ product.image }}'
+      description = '{{ product.description }}'
+    />
+  }
+</div>
