@@ -17,7 +17,7 @@ import {
 export class CardComponent {
   @Input()({ transform: numberAttribute }) id!: number;
   @Input() name: string = '';
-  @Input()({ transform: numberAttribute }) price!: number;
+  @Input() price: string = '';
   @Input() image: string = '';
   @Input() description: string = '';
 }

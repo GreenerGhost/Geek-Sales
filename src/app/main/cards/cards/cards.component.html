@@ -1,14 +1,13 @@
-<div>
-  <h3>Productos de {{ name }}</h3>
-
-  <p>{{ products[0].id }}</p>
+<ul>
+  <p class="hidden">{{ products[0].id }}</p>
     
   @for (product of products; track products) {
     <app-card 
       id = '{{ product.id }}'
       name = '{{ product.name }}'
+      price = '{{ product.price }}'
       image = '{{ product.image }}'
       description = '{{ product.description }}'
     />
   }
-</div>
+</ul>
