@@ -19,6 +19,8 @@ img {
 }
 
 p {
+  height: 15px;
+  overflow: hidden;
   align-self: stretch;
   color: var(--text-color);
   font-size: 14px;

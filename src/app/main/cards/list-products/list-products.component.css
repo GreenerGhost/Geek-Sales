@@ -36,6 +36,7 @@ i {
 
 app-cards {
   max-width: 1133px;
+  min-height: 252px;
 }
 
 @media screen and (max-width: 1440px) and (min-width: 769px) {
