@@ -1,3 +1,20 @@
-:host {
-  display: block;
+ul {
+  width: 176px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+}
+

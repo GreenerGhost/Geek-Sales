@@ -7,7 +7,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   imports: [
     CommonModule,
   ],
-  template: `<p>footer-form works!</p>`,
+  templateUrl: './footer-form.component.html',
   styleUrl: './footer-form.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

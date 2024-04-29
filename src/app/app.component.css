@@ -24,6 +24,15 @@ app-promotional {
     lightgray 50% / cover no-repeat;
 }
 
+app-footer {
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-footer);
+}
+
 @media screen and (max-width: 1440px) and (min-width: 769px) {
   app-promotional {
     width: 100%;
@@ -38,6 +47,10 @@ app-promotional {
       url(../../src/assets/images/banner-image.png),
       lightgray 50% / center no-repeat;
     background-position: center;
+  }
+
+  app-footer {
+    width: 100%;
   }
 }
 
@@ -56,5 +69,9 @@ app-promotional {
     background-size: cover;
     background-position: center;
     padding: 16px;
+  }
+
+  app-footer {
+    width: 100%;
   }
 }

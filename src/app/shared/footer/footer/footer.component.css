@@ -2,6 +2,14 @@ div {
   padding: 32px;
 }
 
+div:last-child {
+  background-color: var(--background-page);
+}
+
+p {
+  text-align: center;
+}
+
 img {
   height: 60px;
   width: 60px;
