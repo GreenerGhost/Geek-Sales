@@ -38,6 +38,10 @@ h1 {
 
 a {
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 @media screen and (max-width: 1440px) and (min-width: 769px) {
