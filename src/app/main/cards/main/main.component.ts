@@ -19,17 +19,17 @@ export class MainComponent {
       id: 1,
       name: 'Star Wars',
     },
-    // {
-    //   id: 2,
-    //   name: 'Consolas',
-    // },
-    // {
-    //   id: 3,
-    //   name: 'Diversos',
-    // },
-    // {
-    //   id: 4,
-    //   name: 'Ropa',
-    // }
+    {
+      id: 2,
+      name: 'Consolas',
+    },
+    {
+      id: 3,
+      name: 'Diversos',
+    },
+    {
+      id: 4,
+      name: 'Ropa',
+    }
   ];
 };
