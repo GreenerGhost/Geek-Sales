@@ -7,10 +7,9 @@ import {
 } from '@angular/core';
 import { CardComponent } from '../card/card.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ConsoleProductService } from '@services/consoleproduct.service';
-import { StarWarsProductService } from '@services/starwarsproduct.service';
-import { ClotesProductService } from '@services/clotesproduct.service';
+import { LocalProductService } from '@services/localproduct.service';
 import { JSONProduct } from '@models/json-product';
+
 
 @Component({
   selector: 'app-cards',
@@ -22,15 +21,12 @@ import { JSONProduct } from '@models/json-product';
 })
 export class CardsComponent implements OnInit {
 
-  @Input() name: string = '';
+  @Input() service: string = '';
+  @Input() api: string = '';
 
   products: JSONProduct[] = [];
   
-  constructor(private productService: ClotesProductService) {
-    // this.productService = new ConsoleProductService(http);
-    // this.productService = new StarWarsProductService(http);
-    // this.productService = new ClotesProductService(http);
-  }
+  constructor(private productService: LocalProductService) {}
 
   ngOnInit(): void {
     this.productService.getProducts().subscribe({

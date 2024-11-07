@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { CardsComponent } from '../cards/cards.component';
 import { MainComponent } from '../main/main.component';
 
@@ -16,5 +16,18 @@ import { MainComponent } from '../main/main.component';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ListProductsComponent {
-  @Input() product: string = '';
+  @Input() name: string = '';
+  @Input() service: string = '';
+  @Input() api: string = '';
+
+  constructor() {}
+
+  ngOnInit(): void {
+    console.log(this.name);
+    console.log(this.service);
+    console.log(this.api);
+  }
+
 }
+
+

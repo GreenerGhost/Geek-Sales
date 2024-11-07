@@ -7,7 +7,7 @@ import { JSONProduct } from '@models/json-product';
 @Injectable({
   providedIn: 'root',
 })
-export class StarWarsProductService {
+export class LocalProductService {
   private ApiUrl: string = apiServer.serverUrl;
 
   constructor(private http: HttpClient) { }

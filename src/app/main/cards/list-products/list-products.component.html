@@ -1,9 +1,12 @@
 <div>
   <!-- Aquí se despliega la división de cada sección, mostrando el nombre de la sección, y las tarjetas de cada producto dependiendo de la sección-->
-  <h2>{{ product }}</h2>
+  <h2>{{ name }}</h2>
   <a href="#">
     <p>Ver todo</p>
     <i class="bx bx-right-arrow-alt"></i>
   </a>
 </div>
-<app-cards name = '{{ product }}'/>
+<app-cards 
+  service = '{{ service }}'
+  api = '{{ api }}'
+/>

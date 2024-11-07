@@ -1,7 +1,11 @@
 <div>
   <!-- Aquí se realiza un ciclo para mostrar la lista de productos por su identificador-->
   @for (product of products; track product.id) {
-    <app-list-products product = '{{ product.name }}'/>
+    <app-list-products 
+      name = '{{ product.name }}'
+      service = '{{ product.service }}'
+      api = '{{ product.api }}'
+    />
   }
 
 </div>
