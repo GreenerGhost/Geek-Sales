@@ -15,7 +15,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CardComponent {
-  @Input()({ transform: numberAttribute }) id!: number;
+  @Input({ transform: numberAttribute }) id!: number;
   @Input() name: string = '';
   @Input() price: string = '';
   @Input() image: string = '';

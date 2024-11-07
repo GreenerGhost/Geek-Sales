@@ -13,13 +13,14 @@ li {
   line-height: normal;
 }
 
+
 img {
   width: 100%;
   height: 174px;
 }
 
 p {
-  height: 15px;
+  height: 17px;
   overflow: hidden;
   align-self: stretch;
   color: var(--text-color);
