@@ -6,7 +6,13 @@
     <i class="bx bx-right-arrow-alt"></i>
   </a>
 </div>
-<app-cards 
-  service = '{{ service }}'
-  api = '{{ api }}'
-/>
+
+@if (service == 'api-server-local') {
+  <app-cards
+    type='{{ type }}'
+  />
+} @else {
+  <app-cards-web
+    type='{{ type }}'
+  />
+}

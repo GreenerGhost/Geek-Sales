@@ -13,7 +13,10 @@ import { StoreAPI, Category, Rating } from '@models/store-api';
   selector: 'app-cards-web',
   standalone: true,
   imports: [
-    CommonModule, CardComponent, HttpClientModule, AsyncPipe
+    CommonModule, 
+    CardComponent, 
+    HttpClientModule, 
+    AsyncPipe
   ],
   templateUrl: './cards-web.component.html',
   styleUrl: './cards-web.component.css',
@@ -21,8 +24,7 @@ import { StoreAPI, Category, Rating } from '@models/store-api';
 })
 export class CardsWebComponent implements OnInit{ 
 
-  @Input() service: string = '';
-  @Input() api: string = '';
+  @Input() type: string = '';
 
   @Input() storeAPI: StoreAPI[] = [];
 

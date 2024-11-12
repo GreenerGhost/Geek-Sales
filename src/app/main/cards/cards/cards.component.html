@@ -2,12 +2,14 @@
   <p class="hidden">{{ products[0].id }}</p>
   <!-- Aquí se despliega el nombre de cada producto por separado, mandando al componente app-card la información para poder mostrarla en cada tarjeta -->
   @for (product of products; track products) {
-    <app-card 
-      id = '{{ product.id }}'
-      name = '{{ product.name }}'
-      price = '{{ product.price }}'
-      image = '{{ product.image }}'
-      description = '{{ product.description }}'
-    />
+    @if ( product.types == type ) {
+      <app-card 
+        id = '{{ product.id }}'
+        name = '{{ product.name }}'
+        price = '{{ product.price }}'
+        image = '{{ product.image }}'
+        description = '{{ product.description }}'
+      />
+    }
   }
 </ul>

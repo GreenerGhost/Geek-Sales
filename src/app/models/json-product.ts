@@ -4,4 +4,5 @@ export interface JSONProduct {
   price: string;
   image: string;
   description: string;
+  types: string;
 }

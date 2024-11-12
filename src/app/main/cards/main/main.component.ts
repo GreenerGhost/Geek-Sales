@@ -19,25 +19,25 @@ export class MainComponent {
       id: 1,
       name: 'Star Wars',
       service: 'api-server-local',
-      api: 'starwars-product',
+      type: 'StarWars',
     },
     {
       id: 2,
       name: 'Consolas',
       service: 'api-server-local',
-      api: 'console-product',
+      type: 'Console',
     },
     {
       id: 3,
       name: 'Diversos',
       service: 'api-server-local',
-      api: 'clotes-product',
+      type: 'Diverse',
     },
     {
       id: 4,
       name: 'Ropa',
       service: 'api-server-web',
-      api: 'product',
+      type: 'product',
     }
   ];
 };
