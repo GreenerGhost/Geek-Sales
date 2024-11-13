@@ -6,12 +6,13 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class ProductService {
+export class webProductService {
+
+  API_URL: string = 'https://fakestoreapi.com/products';
 
   constructor(private http: HttpClient) { }
 
-  getProducts(): Observable<StoreAPI> {
-    return this.http.get<StoreAPI>(`https://fakestoreapi.com/products`);
+  getProducts(): Observable<any> {
+    return this.http.get(this.API_URL).pipe( res => res );
   }
-
 }

@@ -7,7 +7,8 @@ import {
 } from '@angular/core';
 import { CardComponent } from '../card/card.component';
 import { HttpClientModule } from '@angular/common/http';
-import { StoreAPI, Category, Rating } from '@models/store-api';
+import { webProductService } from '@services/product.service';
+import { StoreAPI } from '@models/store-api';
 
 @Component({
   selector: 'app-cards-web',
@@ -26,12 +27,27 @@ export class CardsWebComponent implements OnInit{
 
   @Input() type: string = '';
 
-  @Input() storeAPI: StoreAPI[] = [];
+  products: StoreAPI[] = [];
 
-  constructor() {}
+  constructor(
+    private productService: webProductService,
+  ) {}
 
   ngOnInit(): void {
-    // Fetch data from the API
-    // this.storeAPI = await fetchStoreData();
+    this.getProducts();
+  }
+
+  getProducts(): void {
+    this.productService.getProducts().subscribe({
+      next: (productObject: StoreAPI[]) => {
+        this.products = productObject;
+        console.log(this.products);
+      },
+      error: (error: any) => {
+        console.error(error);
+      },
+      complete: () => {
+      },
+    });
   }
 }

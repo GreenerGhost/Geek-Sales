@@ -34,12 +34,9 @@ export class CardsComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-
     this.apiProductService.getProducts().subscribe({
       next: (productObject: JSONProduct[]) => {
         this.products = productObject;
-        console.log(this.products);
-        
       },
       error: (error: any) => {
         console.error(error);
